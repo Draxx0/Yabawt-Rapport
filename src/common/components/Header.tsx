@@ -9,10 +9,10 @@ const Header = () => {
 
     <ul className="flex items-center gap-4">
      <li>
-      <Link label="Présentation" url="" />
+      <Link label="Présentation" url="presentation" />
      </li>
      <li>
-      <Link label="Yabawt" url="" />
+      <Link label="Yabawt" url="yabawt" />
      </li>
      <li>
       <Link label="Missions" url="" />

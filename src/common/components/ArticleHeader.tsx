@@ -8,7 +8,7 @@ type Props = {
 
 const ArticleHeader = ({ articleTitle, articleFrom, articleFromIcon, articleFromUrl }: Props) => {
  return (
-  <section className="container mx-auto pt-14 md:pt-28">
+  <section className="container pt-14 md:pt-28">
    <h1 className="text-3xl font-bold pb-4">{articleTitle}</h1>
    <div className="flex items-center gap-2">
     <p className="text-gray-600">Un article-reportage de <a className="underline font-semibold" target="_blank" href={articleFromUrl}>{articleFrom}</a></p>
