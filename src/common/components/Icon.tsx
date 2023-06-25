@@ -1,14 +1,14 @@
 import { ReactElement } from 'react';
-import Logo from '../../assets/Logo.png';
-import Website from '../../assets/icons/website.svg';
-import Linkedin from '../../assets/icons/linkedin.svg';
-import Github from '../../assets/icons/github.svg';
-import Nest from '../../assets/icons/nest.svg';
-import Docker from '../../assets/icons/docker.svg';
-import React from '../../assets/icons/react.svg';
-import Postgres from '../../assets/icons/postgres.svg';
-import Arrow from '../../assets/icons/arrow.svg';
-import Webmarketer from '../../assets/icons/webmarketer.svg';
+import Logo from '/Logo.png';
+import Website from '/assets/icons/website.svg';
+import Linkedin from '/assets/icons/linkedin.svg';
+import Github from '/assets/icons/github.svg';
+import Nest from '/assets/icons/nest.svg';
+import Docker from '/assets/icons/docker.svg';
+import React from '/assets/icons/react.svg';
+import Postgres from '/assets/icons/postgres.svg';
+import Arrow from '/assets/icons/arrow.svg';
+import Webmarketer from '/assets/icons/webmarketer.svg';
 
 type IconName =
   | "logo"
