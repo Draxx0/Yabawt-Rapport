@@ -1,0 +1,17 @@
+{
+ "testimonials": [
+  {
+   "name": "Simon Lejeune",
+   "grade": "Développeur Fullstack",
+   "special": "Tuteur",
+   "pp": "",
+   "notice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique lorem eu sem fringilla ornare. Etiam quis bibendum dui. Mauris dignissim nibh justo."
+  },
+  {
+   "name": "Clément Cloux",
+   "grade": "Développeur Fullstack",
+   "pp": "",
+   "notice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique lorem eu sem fringilla ornare. Etiam quis bibendum dui. Mauris dignissim nibh justo."
+  }
+ ]
+}
