@@ -16,10 +16,13 @@ const Header = () => {
       <Link label="Yabawt" url="yabawt" />
      </li>
      <li>
-      <Link label="Missions" url="" />
+      <Link label="Missions" url="missions" />
      </li>
      <li>
-      <Link label="Bilan" url="" />
+      <Link label="Retours" url="testimonials" />
+     </li>
+     <li>
+      <Link label="Bilan" url="review" />
      </li>
     </ul>
 
