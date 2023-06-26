@@ -22,12 +22,19 @@ export default {
       },
       animation: {
         float: "float 4s linear infinite",
+        move: "move 30s linear infinite",
+        spinSlow: "spin 30s linear infinite",
       },
       keyframes: {
         float: {
           "0%, 50%, 100%": { transform: " translateY(0)" },
           "25%": { transform: "translateY(7%)" },
           "77%": { transform: "translateY(-7%)" },
+        },
+        move: {
+          "0%, 50%, 100%": { transform: " translateY(0)" },
+          "25%": { transform: "translateX(7%)" },
+          "77%": { transform: "translateX(-7%)" },
         },
       },
     },

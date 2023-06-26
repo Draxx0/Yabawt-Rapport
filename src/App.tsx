@@ -1,6 +1,7 @@
 import ArticleHeader from "./common/components/ArticleHeader"
 import ArticleRow from "./common/components/ArticleRow"
 import Bloc from "./common/components/Bloc"
+import FloaterIcon from "./common/components/FloaterIcon"
 import Footer from "./common/components/Footer"
 import Header from "./common/components/Header"
 import Missions from "./components/Missions"
@@ -9,10 +10,11 @@ import Testimonials from "./components/Testimonials"
 
 const App = () => {
   return (
-    <>
+    <div className="relative overflow-hidden">
       <Header />
-
       <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="me.jpg" />
+
+      <FloaterIcon name="dots" className="absolute -right-24 -top-5" />
 
       <ArticleRow sectionName="presentation">
         <>
@@ -34,6 +36,8 @@ const App = () => {
         </>
       </ArticleRow>
 
+      <FloaterIcon name="nest" className="absolute -left-16 top-[20%]" />
+
       <ArticleRow sectionName="yabawt">
         <>
           <ArticleRow.Image imageUrl="me.jpg">
@@ -44,19 +48,26 @@ const App = () => {
             </>
           </ArticleRow.Image>
           <ArticleRow.Text articleSubtitle="Yabawt" hasButton textButton="Voir plus">
-            <p className="font-medium">En 2013, l'histoire de Yabawt commence avec la fusion des talents de trois co-fondateurs, donnant naissance à une agence digitale. Leur objectif était de fournir des solutions uniques, adaptées à chaque secteur d'activité, afin d'aider leurs clients à se démarquer de la concurrence. Quatre ans plus tard, une nouvelle phase débute lorsque le Groupe Sud-Ouest investit dans Yabawt. Cette collaboration permet à Yabawt d'étendre son influence et d'offrir à ses clients une expertise enrichie, puisée dans le savoir-faire et l'expérience du Groupe Sud-Ouest. En 2018, Yabawt reçoit une reconnaissance significative en étant officiellement désignée comme une entreprise innovante, bénéficiant du soutien de partenaires de premier plan, la Région Nouvelle Aquitaine, la BP et Theophraste.</p>
+            <div className="relative">
+              <p className="font-medium">En 2013, l'histoire de Yabawt commence avec la fusion des talents de trois co-fondateurs, donnant naissance à une agence digitale. Leur objectif était de fournir des solutions uniques, adaptées à chaque secteur d'activité, afin d'aider leurs clients à se démarquer de la concurrence. Quatre ans plus tard, une nouvelle phase débute lorsque le Groupe Sud-Ouest investit dans Yabawt. Cette collaboration permet à Yabawt d'étendre son influence et d'offrir à ses clients une expertise enrichie, puisée dans le savoir-faire et l'expérience du Groupe Sud-Ouest. En 2018, Yabawt reçoit une reconnaissance significative en étant officiellement désignée comme une entreprise innovante, bénéficiant du soutien de partenaires de premier plan, la Région Nouvelle Aquitaine, la BP et Theophraste.</p>
+              <FloaterIcon name="yabawt" className="absolute left-0 -bottom-36 md:-bottom-48" />
+            </div>
           </ArticleRow.Text>
         </>
       </ArticleRow >
 
-      <Missions />
+      <FloaterIcon name="react" className="absolute -right-24 top-[58%]" />
 
-      <Testimonials />
+      <Missions sectionName="missions" />
 
-      <Review />
+      <Testimonials sectionName="testimonials" />
+
+      <Review sectionName="review" />
+
+      <FloaterIcon name="dots" className="absolute -left-24 bottom-0" />
 
       <Footer />
-    </>
+    </div>
   )
 }
 
