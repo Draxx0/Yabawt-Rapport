@@ -1,13 +1,14 @@
+import Connect from "./Connect";
 import Icon from "./Icon";
 import Link from "./Link";
 
 const Header = () => {
  return (
-  <header className="border-gray-100 border-b-2 py-4">
+  <header className="border-gray-100 border-b-2 py-4 fixed bg-white w-full z-50 shadow-sm">
    <nav className="px-8 container m-auto flex justify-between items-center">
     <Icon name="logo" />
 
-    <ul className="flex items-center gap-4">
+    <ul className="items-center gap-10 hidden md:flex">
      <li>
       <Link label="Présentation" url="presentation" />
      </li>
@@ -22,10 +23,12 @@ const Header = () => {
      </li>
     </ul>
 
-    <div className="flex items-center gap-4">
-     <Icon name="website" url="https://william-fort.fr" />
-     <Icon name="linkedin" url="https://www.linkedin.com/in/william-fort/" />
-     <Icon name="github" url="https://github.com/Draxx0" />
+    <Connect />
+
+    <div className="flex flex-col gap-1 md:hidden">
+     <div className="bg-red w-8 h-1 rounded"></div>
+     <div className="bg-red w-8 h-1 rounded"></div>
+     <div className="bg-red w-8 h-1 rounded"></div>
     </div>
    </nav>
   </header >
