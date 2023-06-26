@@ -9,12 +9,12 @@ export interface TestimonialInterface {
  notice: string;
 }
 
-const Testimonials = () => {
+const Testimonials = ({ sectionName }: { sectionName: string; }) => {
  const { testimonials }: {
   testimonials: TestimonialInterface[]
  } = testimonialsJson;
  return (
-  <section className="container pt-14 md:pt-28">
+  <section className="container pt-14 md:pt-28" id={sectionName}>
    <h2 className="text-2xl font-bold mb-16 ">Quelques retours</h2>
 
    <div className="flex justify-between gap-10 flex-col md:flex-row">
