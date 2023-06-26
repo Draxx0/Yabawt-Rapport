@@ -1,11 +1,11 @@
 import Button from "./Button";
 
-const ArticleRowText = ({ children, articleSubtitle, hasButton = false, textButton = "Découvrir" }: { children: React.ReactElement, articleSubtitle: string; hasButton?: boolean, textButton?: string; }) => (
+const ArticleRowText = ({ children, articleSubtitle, hasButton = false, textButton = "Découvrir", url }: { children: React.ReactElement, articleSubtitle: string; hasButton?: boolean, textButton?: string; url?: string; }) => (
  <div className="flex flex-col gap-6 w-full md:w-1/2">
-  <h2 className="text-2xl font-bold">{articleSubtitle}</h2>
+  <h2 className="text-2xl w-fit font-bold relative z-10 before:[] before:w-1/2 before:h-2 before:absolute before:left-0 before:bottom-[0.15rem] before:bg-red before:opacity-40">{articleSubtitle}</h2>
   {children}
   {(hasButton && textButton) && (
-   <Button text={textButton} hasArrow />
+   <Button text={textButton} hasArrow url={url} />
   )}
  </div>
 );

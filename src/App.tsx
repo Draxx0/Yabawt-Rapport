@@ -18,7 +18,7 @@ const App = () => {
 
       <ArticleRow sectionName="presentation">
         <>
-          <ArticleRow.Text articleSubtitle="Aujourd’hui, parlons développement." hasButton textButton="Découvrir">
+          <ArticleRow.Text articleSubtitle="Aujourd’hui, parlons développement." hasButton textButton="Découvrir" url="#yabawt">
             <div className="flex flex-col gap-3">
               <p className="font-medium">Je suis FORT William, étudiant en deuxième années de développement web à l’ESD de Bordeaux. Passionnés par le web je cherchais à mettre en oeuvre les
                 compétences que j’ai pu acquérir lors de ma formation ainsi qu’au cours de mes heures de développement sur des projets personnels.</p>
@@ -47,7 +47,7 @@ const App = () => {
               <Bloc imageUrl="/assets/icons/react.svg" className="-right-12 top-16" tooltipContent="Désigné comme entreprise innovante."><p className="text-red font-bold text-xl cursor-help">2018</p></Bloc>
             </>
           </ArticleRow.Image>
-          <ArticleRow.Text articleSubtitle="Yabawt" hasButton textButton="Voir plus">
+          <ArticleRow.Text articleSubtitle="Yabawt" hasButton textButton="Voir plus" url="https://www.yabawt.com/">
             <div className="relative">
               <p className="font-medium">En 2013, l'histoire de Yabawt commence avec la fusion des talents de trois co-fondateurs, donnant naissance à une agence digitale. Leur objectif était de fournir des solutions uniques, adaptées à chaque secteur d'activité, afin d'aider leurs clients à se démarquer de la concurrence. Quatre ans plus tard, une nouvelle phase débute lorsque le Groupe Sud-Ouest investit dans Yabawt. Cette collaboration permet à Yabawt d'étendre son influence et d'offrir à ses clients une expertise enrichie, puisée dans le savoir-faire et l'expérience du Groupe Sud-Ouest. En 2018, Yabawt reçoit une reconnaissance significative en étant officiellement désignée comme une entreprise innovante, bénéficiant du soutien de partenaires de premier plan, la Région Nouvelle Aquitaine, la BP et Theophraste.</p>
               <FloaterIcon name="yabawt" className="absolute left-0 -bottom-36 md:-bottom-48" />
