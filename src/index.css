@@ -16,3 +16,16 @@ html {
 *:not(h1, h2, h3, h4, h5) {
   font-family: "Poppins", "sans-serif";
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e0234e;
+}
+
+::selection {
+  background: #e0234e;
+  color: white;
+}
