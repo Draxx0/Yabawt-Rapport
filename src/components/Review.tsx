@@ -1,7 +1,7 @@
 const Review = ({ sectionName }: { sectionName: string; }) => {
   return (
     <section className="container py-14 md:py-28" id={sectionName}>
-      <h2 className="text-2xl font-bold mb-4 ">Bilan d’expérience</h2>
+      <h2 className="text-2xl mb-4 w-fit font-bold relative z-10 before:[] before:w-1/2 before:h-2 before:absolute before:left-0 before:bottom-[0.15rem] before:bg-red before:opacity-40">Bilan d’expérience</h2>
       <div className="flex flex-col space-y-4">
         <p className="font-medium">C’est ainsi que mon expérience en tant que développeur web fullstack js se termine auprès de l’agence Yabawt.</p>
         <p className="font-medium">  Ce stage m’aura permis dans un premier temps de mettre en oeuvre les compétences acquises au cours de ma formation,de consolider celles que je posséder déjà mais surtout
