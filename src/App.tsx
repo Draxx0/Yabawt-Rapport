@@ -1,7 +1,11 @@
 import ArticleHeader from "./common/components/ArticleHeader"
 import ArticleRow from "./common/components/ArticleRow"
 import Bloc from "./common/components/Bloc"
+import Footer from "./common/components/Footer"
 import Header from "./common/components/Header"
+import Missions from "./components/Missions"
+import Review from "./components/Review"
+import Testimonials from "./components/Testimonials"
 
 const App = () => {
   return (
@@ -44,6 +48,14 @@ const App = () => {
           </ArticleRow.Text>
         </>
       </ArticleRow >
+
+      <Missions />
+
+      <Testimonials />
+
+      <Review />
+
+      <Footer />
     </>
   )
 }
