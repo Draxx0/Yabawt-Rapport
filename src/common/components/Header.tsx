@@ -1,10 +1,19 @@
+import { useEffect, useState, useRef, RefObject } from "react";
 import Connect from "./Connect";
 import Icon from "./Icon";
 import Link from "./Link";
 
 const Header = () => {
+ const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+ useEffect(() => {
+  window.onscroll = () => {
+   setIsScrolled(window.scrollY === 0 ? false : true);
+  };
+ }, [])
+
  return (
-  <header className="border-gray-100 border-b-2 py-4 fixed bg-white w-full z-50 shadow-sm">
+  <header className={`border-gray-100 py-4 fixed w-full z-50 transition-all ease-in-out duration-200 ${isScrolled && "shadow-sm border-b-2 bg-white"} `}>
    <nav className="px-8 container m-auto flex justify-between items-center">
     <Icon name="logo" />
 
