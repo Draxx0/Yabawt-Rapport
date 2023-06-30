@@ -1,0 +1,42 @@
+{
+ "webmarketerMissions":[
+  {
+    "text": "Un service nestjs de benchmark."
+  },
+  {
+    "text": "Un fonction pour clusteriser les sessions utilisateur."
+  },
+  {
+    "text": "Un onglet pour consulter l’état des projets d’un workspace sur le site admin de webmarketer."
+  },
+  {
+    "text": "Une fonctionnalités permettant à l’utilisateur d’avoir une prévisualisation du lien qu’il aura à configurer dans son business Manager."
+  },
+  {
+    "text": "L’intégration du redesign de plusieurs pages du site web Webmarketer.io ."
+  }
+],
+"webmarketerPictures":[
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ }
+]
+}

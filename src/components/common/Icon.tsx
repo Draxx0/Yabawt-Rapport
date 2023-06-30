@@ -8,7 +8,7 @@ import Docker from '/assets/icons/docker.svg';
 import React from '/assets/icons/react.svg';
 import Postgres from '/assets/icons/postgres.svg';
 import Arrow from '/assets/icons/arrow.svg';
-import Webmarketer from '/assets/icons/webmarketer.svg';
+import Cross from '/assets/icons/cross.svg';
 
 type IconName =
   | "logo"
@@ -20,7 +20,7 @@ type IconName =
   | "react"
   | "postgres"
   | "arrow"
-  | "webmarketer"
+  | "cross"
 
 const Icon = ({ name, url }: { name: IconName; url?: string }): ReactElement => {
   switch (name) {
@@ -58,8 +58,8 @@ const Icon = ({ name, url }: { name: IconName; url?: string }): ReactElement => 
     case 'arrow':
       return <img src={Arrow} alt="" className="cursor-pointer" />
 
-    case 'webmarketer':
-      return <img src={Webmarketer} alt="" className="cursor-pointer" />
+    case 'cross':
+      return <img src={Cross} alt="" className="cursor-pointer" />
 
     default:
       return <></>

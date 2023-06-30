@@ -10,6 +10,7 @@ import Header from "./components/common/Header";
 import Missions from "./components/Missions";
 import Review from "./components/Review";
 import Testimonials from "./components/Testimonials";
+import ReturnTop from "./components/common/ReturnTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,6 +82,8 @@ const App = () => {
       <Review sectionName="review" />
 
       <FloaterIcon name="dots" className="absolute -left-24 bottom-0" />
+
+      <ReturnTop />
 
       <Footer />
     </div>

@@ -29,3 +29,12 @@ body::-webkit-scrollbar-thumb {
   background: #e0234e;
   color: white;
 }
+
+ul .mission::before {
+  content: "\2022";
+  color: #e0234e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

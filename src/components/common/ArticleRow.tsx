@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Button from "../../common/components/Button";
+import Button from "../common/Button";
 
 const ArticleRowText = ({ children, articleSubtitle, hasButton = false, textButton = "Découvrir", url }: { children: React.ReactElement, articleSubtitle: string; hasButton?: boolean, textButton?: string; url?: string; }) => {
  const containerRef = useRef<HTMLDivElement>(null)

@@ -1,0 +1,63 @@
+{
+  "ticketrzMissions":[
+   {
+     "text": "Fixer la pagination."
+   },
+   {
+     "text": "Ajout d’un système de trie par date."
+   },
+   {
+     "text": "Améliorations du système de filtre actuel  en y ajoutant un état “En attente de réponse”."
+   },
+   {
+     "text": "Ajout de la possibilité d’ajouter des pièces jointes à la création du ticket."
+   },
+   {
+     "text": "Ajout de la privisualisations des pièces jointes, images comme pdf."
+   },
+   {
+     "text": "Ajout d’un filtre sur le sujet, par ordre alphabétique."
+   },
+   {
+     "text": "Ajout d’un toggle d’affichage permettant d’afficher les tickets sous forme de grille ou sous forme de listes."
+   },
+   {
+     "text": "Migration du state manager Redux vers le state manager Zustand + persistance des données de préférences d’affichage utilisateur en local storage."
+   },
+   {
+     "text": "Ajout de l’outil WYSIWYG Tiptap."
+   },
+   {
+     "text": "Assainnissement d'HTML côté backend pour éviter les possibles injection XSS."
+   },
+   {
+     "text": "Ajout d’une modal pour l’ajout de lien."
+   },
+   {
+     "text": "Ajout d’une rubrique contenant les filtres actuellement appliqués."
+   }
+ ],
+ "ticketrzPictures":[
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  },
+  {
+    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+  }
+ ]
+}
