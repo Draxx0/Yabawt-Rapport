@@ -1,6 +1,24 @@
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+
 const Review = ({ sectionName }: { sectionName: string; }) => {
+  const containerRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(containerRef.current, {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top center",
+        },
+        x: 20,
+        duration: 1,
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, [])
   return (
-    <section className="container py-14 md:py-28" id={sectionName}>
+    <section className="container py-14 md:py-28" id={sectionName} ref={containerRef}>
       <h2 className="text-2xl mb-4 w-fit font-bold relative z-10 before:[] before:w-1/2 before:h-2 before:absolute before:left-0 before:bottom-[0.15rem] before:bg-red before:opacity-40">Bilan d’expérience</h2>
       <div className="flex flex-col space-y-4">
         <p className="font-medium">C’est ainsi que mon expérience en tant que développeur web fullstack js se termine auprès de l’agence Yabawt.</p>

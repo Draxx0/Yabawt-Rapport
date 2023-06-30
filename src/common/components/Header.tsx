@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, RefObject } from "react";
+import { useEffect, useState } from "react";
 import Connect from "./Connect";
 import Icon from "./Icon";
 import Link from "./Link";

@@ -1,16 +1,32 @@
-import ArticleHeader from "./common/components/ArticleHeader"
-import ArticleRow from "./common/components/ArticleRow"
-import Bloc from "./common/components/Bloc"
-import FloaterIcon from "./common/components/FloaterIcon"
-import Footer from "./common/components/Footer"
-import Header from "./common/components/Header"
-import Missions from "./components/Missions"
-import Review from "./components/Review"
-import Testimonials from "./components/Testimonials"
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import ArticleHeader from "./common/components/ArticleHeader";
+import ArticleRow from "./common/components/ArticleRow";
+import Bloc from "./common/components/Bloc";
+import FloaterIcon from "./common/components/FloaterIcon";
+import Footer from "./common/components/Footer";
+import Header from "./common/components/Header";
+import Missions from "./components/Missions";
+import Review from "./components/Review";
+import Testimonials from "./components/Testimonials";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const App = () => {
+  const appRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from("*", { opacity: 0, duration: 1 });
+    }, appRef);
+
+    return () => ctx.revert();
+  }, [])
+
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden" ref={appRef}>
       <Header />
       <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="me.jpg" />
 
