@@ -40,7 +40,7 @@ const App = () => {
 
       <ArticleRow sectionName="yabawt">
         <>
-          <ArticleRow.Image imageUrl="me.jpg">
+          <ArticleRow.Image imageUrl="/assets/images/yabawt-team.png">
             <>
               <Bloc imageUrl="/assets/icons/nest.svg" className="-left-12 -top-5" tooltipContent="Création de Yabawt."><p className="text-red font-bold text-xl cursor-help">2013</p></Bloc>
               <Bloc imageUrl="/assets/icons/docker.svg" className="-left-12 bottom-16" tooltipContent="Sud ouest investit dans Yabawt."><p className="text-red font-bold text-xl cursor-help">2017</p></Bloc>
