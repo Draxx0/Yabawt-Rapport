@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import ArticleHeader from "./common/components/ArticleHeader";
-import ArticleRow from "./common/components/ArticleRow";
-import Bloc from "./common/components/Bloc";
-import FloaterIcon from "./common/components/FloaterIcon";
-import Footer from "./common/components/Footer";
-import Header from "./common/components/Header";
+import ArticleHeader from "./components/common/ArticleHeader";
+import ArticleRow from "./components/common/ArticleRow";
+import Bloc from "./components/common/Bloc";
+import FloaterIcon from "./components/common/FloaterIcon";
+import Footer from "./components/common/Footer";
+import Header from "./components/common/Header";
 import Missions from "./components/Missions";
 import Review from "./components/Review";
 import Testimonials from "./components/Testimonials";
@@ -56,7 +56,7 @@ const App = () => {
 
       <ArticleRow sectionName="yabawt">
         <>
-          <ArticleRow.Image imageUrl="me.jpg">
+          <ArticleRow.Image imageUrl="/assets/images/yabawt-team.png">
             <>
               <Bloc imageUrl="/assets/icons/nest.svg" className="-left-12 -top-5" tooltipContent="Création de Yabawt."><p className="text-red font-bold text-xl cursor-help">2013</p></Bloc>
               <Bloc imageUrl="/assets/icons/docker.svg" className="-left-12 bottom-16" tooltipContent="Sud ouest investit dans Yabawt."><p className="text-red font-bold text-xl cursor-help">2017</p></Bloc>
