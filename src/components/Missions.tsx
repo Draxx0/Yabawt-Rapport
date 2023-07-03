@@ -9,11 +9,11 @@ import MissionPictures from "./MissionPictures";
 type Mission = "webmarketer" | "ticketrz"
 
 const Missions = ({ sectionName }: { sectionName: string; }) => {
-  const [mission, setMission] = useState<Mission>("ticketrz")
+  const [mission, setMission] = useState<Mission>("webmarketer")
   const containerRef = useRef<HTMLDivElement>(null)
 
   const { ticketrzMissions, ticketrzPictures }: { ticketrzMissions: Array<{ text: string }>; ticketrzPictures: Array<{ path: string }> } = ticketrzMissionsData;
-  const { webmarketerMissions, webmarketerPictures }: { webmarketerMissions: Array<{ text: string }>; webmarketerPictures: Array<{ path: string }> } = webmarketerMissionsData;
+  const { webmarketerMissions, webmarketerPictures, webmarketerLearns }: { webmarketerMissions: Array<{ text: string }>; webmarketerPictures: Array<{ path: string }>; webmarketerLearns: Array<{ text: string }> } = webmarketerMissionsData;
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(containerRef.current, {
@@ -41,8 +41,8 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
 
       {mission === "webmarketer" ? (
         <>
-          <MissionRow imageUrl="https://via.placeholder.com/400" displayingText="left" subtitle="Webmarketer" text="Webmarketer est un produit SaaS développé depuis 2017 par l’agence Yabawt il permet d’analyser facilement ses dépenses marketing, avec Webmarketer il est possible d’analyser en détail l’ensemble de ses campagnes dans un référentiel unique & impartial." />
-          <MissionRow imageUrl="https://via.placeholder.com/400" displayingText="right" subtitle="Micro-service" text="Webmarketer se présente sous la forme d’un micro service" />
+          <MissionRow imageUrl="/assets/images/webmarketer/webmarketer-explained.png" displayingText="left" subtitle="Webmarketer" text="Webmarketer est un produit SaaS développé depuis 2017 par l’agence Yabawt il permet d’analyser facilement ses dépenses marketing, avec Webmarketer il est possible d’analyser en détail l’ensemble de ses campagnes dans un référentiel unique & impartial." />
+          <MissionRow imageUrl="/assets/images/webmarketer/micro-service.png" displayingText="right" subtitle="Micro-service" text="Webmarketer se présente sous la forme d’un micro service" />
           <MissionTasks title="Webmarketer représente la moitié de mes missions sur la durée de mon stage, voici la liste des missions qui m’ont été assignées :">
             <div className="flex flex-col gap-3 mt-3">
 
@@ -50,7 +50,7 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
 
               <ul className="pl-4 my-4 flex flex-col gap-2">
                 {webmarketerMissions.map((mission, index) => (
-                  <li className="mission" key={index}>
+                  <li className="bullet-li" key={index}>
                     {mission.text}
                   </li>
                 ))}
@@ -58,23 +58,22 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
 
 
               <p>Ces missions ont toutes été très enrichissantes, celle qui m’ont donné le plus de fil à retordre ont été les deux premières, elles me demander
-                de développer des algorythmes plutôt complexes. Chaque mission m’a permis d’améliorer ma logique, mais chacune m’a
-                également former sur :</p>
+                de développer des algorythmes plutôt complexes. Chaque mission m’a permis d’améliorer ma logique et ma permis de me former sur les sujets tels que :</p>
 
-              <ul>
-                {webmarketerMissions.slice(0, 3).map((mission, index) => (
-                  <li className="mission" key={index}>
+              <ul className="pl-4 my-4 flex flex-col gap-2">
+                {webmarketerLearns.map((mission, index) => (
+                  <li className="bullet-li" key={index}>
                     {mission.text}
                   </li>
                 ))}
               </ul>
 
-              <p>J’ai pour le coup pris un grand plaisir sur mes missions données Webmarketer, tout d’abord parce que le projet est très très vaste et requiert un
+              <p>J’ai pour le coup pris un grand plaisir sur mes missions Webmarketer, tout d’abord parce que le projet est très, très vaste et requiert un
                 code irréprochable. Travailler sur Webmarketer m’a permis de développer une certaine rigueur dans mon code, bien repasser sur chacun de mes
-                bouts de codes pour être certain qu’ils étaient adapté au besoin et qu’ils respecter un principe de “clean code”.</p>
+                bouts de codes pour être certain qu’ils étaient adapté au besoin et qu’ils respectaient un principe les principes du “clean code”.</p>
 
               <p>
-                Cela n’a pour autant pas été simple, la première difficulté fût d’assimiler les principes de Webmarker, il vaut mieux comprendre le service avant de
+                Cela n’a pour autant pas été simple, la première difficulté fût d’assimiler ce qu'était Webmarker ce qu'il propose, il vaut mieux comprendre le service avant de
                 travailler dessus, vous en conviendrez.</p>
 
               <MissionPictures pictures={webmarketerPictures} />
@@ -94,7 +93,7 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
 
                 <ul className="pl-4 my-4 flex flex-col gap-2">
                   {ticketrzMissions.map((mission, index) => (
-                    <li className="mission" key={index}>
+                    <li className="bullet-li" key={index}>
                       {mission.text}
                     </li>
                   ))}

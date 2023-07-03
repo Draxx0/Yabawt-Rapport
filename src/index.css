@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
-ul .mission::before {
+ul .bullet-li::before {
   content: "\2022";
   color: #e0234e;
   font-weight: bold;
