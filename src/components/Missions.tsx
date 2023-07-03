@@ -82,7 +82,7 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
         </>
       ) : (
         <>
-          <MissionRow imageUrl="/assets/images/ticketrz-image.png" displayingText="left" subtitle="Ticketrz" text="Ticketrz est une web-application développé par Yabawt lors de la période de Covid-19, elle permet aux clients de Yabawt d’ouvrir des “tickets” permettant d’exprimer leurs besoins par le biais d’une discussion écrite. Ticketrz a été développé pour centraliser les questions des clients sur une même plateforme en les catégorisant par projet." />
+          <MissionRow imageUrl="/assets/images/ticketrz-image.png" displayingText="left" subtitle="Ticketrz" text="Ticketrz est une web-application développé par Yabawt lors de la période du Covid-19, elle permet aux clients de Yabawt d’ouvrir des “tickets” permettant d’exprimer leurs besoins par le biais d’une discussion écrite. Ticketrz a été développé pour centraliser les questions des clients sur une même plateforme en les catégorisant par projet." />
 
           <MissionTasks title="Mon travail fut de développer de nouvelles fonctionnalités et de corriger des bugs connus de la web app.">
             <div className="flex flex-col gap-3 mt-3">
@@ -104,7 +104,7 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
                 J’ai eu pour mission de l’intégrer à la place des simples champs de textes présents sur les formulaires d’ajout de message et d’ajout de ticket.
                 La librarie Tiptap étant plutôt bien faites je n’ai pas eu trop de difficultés à l’intégrer mais j’en ai pris un grand plaisir ! j’ai connecté le champ de texte Tiptap au state React qui accueillait les données du champ afin de par la suite les envoyer vers le backend.</p>
 
-              <p>Au cours toutes ces missions j’ai pu rencontrer certaines difficultés, mais si je devais retenir une difficulté à surmonter c’est bien celle de l’abstraction. Réussir à isoler le gros problème en plusieurs petits, j’ai remarqué que j’avais encore du mal à faire cette répartition. Afin de résoudre ce souci, désormais je prends plus de temps avant de me jeter dans le code, quand j’ai pris connaissance du problème je réfléchis à un plan d’opérations pour résoudre le souci.</p>
+              <p>Au cours toutes ces missions j’ai pu rencontrer certaines difficultés, mais si je devais retenir une difficulté à surmonter par dessus tout c’est bien celle de l’abstraction. Réussir à isoler le gros problème en plusieurs petits, j’ai remarqué que j’avais encore du mal à faire cette répartition. Afin de résoudre ce souci, désormais je prends plus de temps avant de me jeter dans le code, quand j’ai pris connaissance du problème je réfléchis à un plan d’opérations pour résoudre le souci.</p>
 
               <MissionPictures pictures={ticketrzPictures} />
             </div>
