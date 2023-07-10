@@ -30,6 +30,12 @@ const ArticleHeader = ({ articleTitle, articleFrom, articleFromIcon, articleFrom
             duration: 1,
             delay: 1,
             ease: 'power4.out',
+            onComplete() {
+              const targets: NodeListOf<HTMLElement> = document.querySelectorAll("*");
+              targets.forEach((target: HTMLElement) => {
+                target.style.removeProperty("opacity")
+              });
+            }
           }
         )
       }, containerRef);

@@ -20,7 +20,9 @@ const App = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from("*", { opacity: 0, duration: 1 });
+      gsap.from("*", {
+        opacity: 0, duration: 1
+      });
     }, appRef);
 
     return () => ctx.revert();
