@@ -7,7 +7,6 @@ import Nest from '/assets/icons/nest.svg';
 import Docker from '/assets/icons/docker.svg';
 import React from '/assets/icons/react.svg';
 import Postgres from '/assets/icons/postgres.svg';
-import Arrow from '/assets/icons/arrow.svg';
 import Cross from '/assets/icons/cross.svg';
 
 type IconName =
