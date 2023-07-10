@@ -14,7 +14,7 @@ const ReturnTop = () => {
   return (
     <div className={classes}>
       <div className="relative flex justify-center items-center w-full h-full -rotate-90" onClick={() => window.scrollTo(0, 0)}>
-        <Icon name="arrow" />
+        <Icon name="arrow" className="text-white" />
       </div>
     </div>
   );
