@@ -1,0 +1,53 @@
+{
+ "webmarketerMissions":[
+  {
+    "text": "Créer un service nestjs de benchmark."
+  },
+  {
+    "text": "Créer une fonction pour clusteriser les sessions utilisateur."
+  },
+  {
+    "text": "Créer un onglet pour consulter l’état des projets d’un workspace sur le site admin de webmarketer."
+  },
+  {
+    "text": "Créer une fonctionnalités permettant à l’utilisateur d’avoir une prévisualisation du lien qu’il aura à configurer dans son business Manager."
+  },
+  {
+    "text": "Intégration du redesign de plusieurs pages du site web Webmarketer.io."
+  }
+],
+"webmarketerLearns": [
+  {
+    "text": "L’utilisation du multithreading."
+  },
+  {
+    "text": "La découverte de la logique d’un algorithme de clusterisation."
+  },
+  {
+    "text": "L’éveil globalement de ma logique de programmation."
+  }
+],
+"webmarketerPictures":[
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ },
+ {
+   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+ }
+]
+}

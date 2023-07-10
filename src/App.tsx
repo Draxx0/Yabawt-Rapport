@@ -1,18 +1,37 @@
-import ArticleHeader from "./common/components/ArticleHeader"
-import ArticleRow from "./common/components/ArticleRow"
-import Bloc from "./common/components/Bloc"
-import FloaterIcon from "./common/components/FloaterIcon"
-import Footer from "./common/components/Footer"
-import Header from "./common/components/Header"
-import Missions from "./components/Missions"
-import Review from "./components/Review"
-import Testimonials from "./components/Testimonials"
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import ArticleHeader from "./components/common/ArticleHeader";
+import ArticleRow from "./components/common/ArticleRow";
+import Bloc from "./components/common/Bloc";
+import FloaterIcon from "./components/common/FloaterIcon";
+import Footer from "./components/common/Footer";
+import Header from "./components/common/Header";
+import Missions from "./components/Missions";
+import Review from "./components/Review";
+import Testimonials from "./components/Testimonials";
+import ReturnTop from "./components/common/ReturnTop";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const App = () => {
+  const appRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from("*", {
+        opacity: 0, duration: 1
+      });
+    }, appRef);
+
+    return () => ctx.revert();
+  }, [])
+
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden" ref={appRef}>
       <Header />
-      <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="me.jpg" />
+      <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="/assets/icons/code.png" />
 
       <FloaterIcon name="dots" className="absolute -right-24 -top-5" />
 
@@ -40,7 +59,7 @@ const App = () => {
 
       <ArticleRow sectionName="yabawt">
         <>
-          <ArticleRow.Image imageUrl="me.jpg">
+          <ArticleRow.Image imageUrl="/assets/images/yabawt-team.png">
             <>
               <Bloc imageUrl="/assets/icons/nest.svg" className="-left-12 -top-5" tooltipContent="Création de Yabawt."><p className="text-red font-bold text-xl cursor-help">2013</p></Bloc>
               <Bloc imageUrl="/assets/icons/docker.svg" className="-left-12 bottom-16" tooltipContent="Sud ouest investit dans Yabawt."><p className="text-red font-bold text-xl cursor-help">2017</p></Bloc>
@@ -65,6 +84,8 @@ const App = () => {
       <Review sectionName="review" />
 
       <FloaterIcon name="dots" className="absolute -left-24 bottom-0" />
+
+      <ReturnTop />
 
       <Footer />
     </div>
