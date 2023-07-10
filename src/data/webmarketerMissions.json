@@ -29,25 +29,16 @@
 ],
 "webmarketerPictures":[
  {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+   "path": "/assets/images/webmarketer/webmarketer1.jpg",
+   "tooltipLabel": "Service de benchmark"
  },
  {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+   "path": "/assets/images/webmarketer/webmarketer2.jpg",
+   "tooltipLabel": "Onglet de consultation d'état des projets"
  },
  {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
- },
- {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
- },
- {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
- },
- {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
- },
- {
-   "path": "/assets/images/webmarketer/webmarketer-image-1.png"
+   "path": "/assets/images/webmarketer/webmarketer3.jpg",
+   "tooltipLabel": "Intégration de la refonte du site web"
  }
 ]
 }
