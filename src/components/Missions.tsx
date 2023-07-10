@@ -41,12 +41,26 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
 
       {mission === "webmarketer" ? (
         <>
-          <MissionRow imageUrl="/assets/images/webmarketer/webmarketer-explained.png" displayingText="left" subtitle="Webmarketer" text="Webmarketer est un produit SaaS développé depuis 2017 par l’agence Yabawt il permet d’analyser facilement ses dépenses marketing, avec Webmarketer il est possible d’analyser en détail l’ensemble de ses campagnes dans un référentiel unique & impartial." />
-          <MissionRow imageUrl="/assets/images/webmarketer/micro-service.png" displayingText="right" subtitle="Micro-service" text="Webmarketer se présente sous la forme d’un micro service" />
+          <MissionRow imageUrl="/assets/images/webmarketer/webmarketer-explained.png" displayingText="left" subtitle="Webmarketer" text="Webmarketer est un produit SaaS développé depuis 2017 par l’agence Yabawt il permet d’analyser facilement ses dépenses marketing, avec Webmarketer il est possible d’analyser en détail l’ensemble de ses campagnes dans un référentiel unique & impartial.">
+            <>
+              <p>Le service permet à son utilisateur d’analyser la rentabilité de ses canaux d’acquisitions tels qu’une campagne Google Ads, une publicité Facebook ads et bien d’autre. L’objectif de Webmarketer est de permettre aux utilisateurs d’orienter leurs dépenses vers les canaux et supports leurs offrants un réel retour sur investissement.</p>
+            </>
+          </MissionRow>
+          <MissionRow displayingText="right" subtitle="Fonctionnalités" text="Webmarketer embarque plusieurs fonctionnalités tels que :">
+            <>
+              <ul className="pl-4 my-4 flex flex-col gap-2">
+                <li className="bullet-li">La collecte de données, permettant d’agréger la totalités des données marketing de l’utilisateur dans un référentiel centralisé et impartial.</li>
+                <li className="bullet-li">L’analyse de ses campagnes marketing, permet l’analyse avec précisions de la rentabilité des campagnes menés.</li>
+                <li className="bullet-li">Les modèles d’attributions, permettant d’utiliser ou de créer de nouveau modèles d’attributions permettant de répartir l’importance de l’action menées sur le site de l’utilisateur.</li>
+                <li className="bullet-li">L’analyse de la customer journey, permet de dresser une customer journey de tous les utilisateurs de son site.</li>
+                <li className="bullet-li">La Data Visualisation, Permet de visualiser ces KPI dans des tableaux entièrement personnalisable.</li>
+              </ul>
+              <img src="/assets/images/webmarketer/Webmarketer-app.jpg" alt="" />
+            </>
+          </MissionRow>
+          <MissionRow imageUrl="/assets/images/webmarketer/micro-service.png" displayingText="left" subtitle="Micro-service" text="Webmarketer se présente sous la forme d’un micro service" />
           <MissionTasks title="Webmarketer représente la moitié de mes missions sur la durée de mon stage, voici la liste des missions qui m’ont été assignées :">
             <div className="flex flex-col gap-3 mt-3">
-
-
 
               <ul className="pl-4 my-4 flex flex-col gap-2">
                 {webmarketerMissions.map((mission, index) => (
@@ -55,7 +69,6 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
                   </li>
                 ))}
               </ul>
-
 
               <p>Ces missions ont toutes été très enrichissantes, celle qui m’ont donné le plus de fil à retordre ont été les deux premières, elles me demander
                 de développer des algorythmes plutôt complexes. Chaque mission m’a permis d’améliorer ma logique et ma permis de me former sur les sujets tels que :</p>
