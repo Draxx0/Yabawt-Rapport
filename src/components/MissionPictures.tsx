@@ -13,7 +13,12 @@ const MissionPictures = ({ pictures }: { pictures: Array<{ path: string; tooltip
         <Swiper
           className="relative"
           modules={[Navigation]}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            1200: {
+              slidesPerView: 2
+            }
+          }}
           navigation={{
             nextEl: ".image-swiper-button-next",
             prevEl: ".image-swiper-button-prev",
