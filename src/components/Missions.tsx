@@ -43,17 +43,17 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
         <>
           <MissionRow imageUrl="/assets/images/webmarketer/webmarketer-explained.png" displayingText="left" subtitle="Webmarketer" text="Webmarketer est un produit SaaS développé depuis 2017 par l’agence Yabawt il permet d’analyser facilement ses dépenses marketing, avec Webmarketer il est possible d’analyser en détail l’ensemble de ses campagnes dans un référentiel unique & impartial.">
             <>
-              <p>Le service permet à son utilisateur d’analyser la rentabilité de ses canaux d’acquisitions tels qu’une campagne Google Ads, une publicité Facebook ads et bien d’autre. L’objectif de Webmarketer est de permettre aux utilisateurs d’orienter leurs dépenses vers les canaux et supports leurs offrants un réel retour sur investissement.</p>
+              <p>Le service permet à son utilisateur d’analyser la rentabilité de ses canaux d’acquisitions telle qu’une campagne Google Ads, une publicité Facebook ads et bien d’autres. L’objectif de Webmarketer est de permettre aux utilisateurs d’orienter leurs dépenses vers les canaux et supports leurs offrants un réel retour sur investissement.</p>
             </>
           </MissionRow>
           <MissionRow displayingText="right" subtitle="Fonctionnalités" text="Webmarketer embarque plusieurs fonctionnalités tels que :">
             <>
               <ul className="pl-4 my-4 flex flex-col gap-2">
-                <li className="bullet-li">La collecte de données, permettant d’agréger la totalités des données marketing de l’utilisateur dans un référentiel centralisé et impartial.</li>
-                <li className="bullet-li">L’analyse de ses campagnes marketing, permet l’analyse avec précisions de la rentabilité des campagnes menés.</li>
-                <li className="bullet-li">Les modèles d’attributions, permettant d’utiliser ou de créer de nouveau modèles d’attributions permettant de répartir l’importance de l’action menées sur le site de l’utilisateur.</li>
+                <li className="bullet-li">La collecte de données, permettant d’agréger la totalité des données marketing de l’utilisateur dans un référentiel centralisé et impartial.</li>
+                <li className="bullet-li">L’analyse de ses campagnes marketing, permet l’analyse avec précision de la rentabilité des campagnes menées.</li>
+                <li className="bullet-li">Les modèles d’attributions, permettant d’utiliser ou de créer de nouveau modèles d’attributions permettant de répartir l’importance de l’action menée sur le site de l’utilisateur.</li>
                 <li className="bullet-li">L’analyse de la customer journey, permet de dresser une customer journey de tous les utilisateurs de son site.</li>
-                <li className="bullet-li">La Data Visualisation, Permet de visualiser ces KPI dans des tableaux entièrement personnalisable.</li>
+                <li className="bullet-li">La Data visualisation, Permet de visualiser ces KPI dans des tableaux entièrement personnalisables.</li>
               </ul>
               <img src="/assets/images/webmarketer/Webmarketer-app.jpg" alt="" />
             </>
