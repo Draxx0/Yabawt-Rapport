@@ -12,8 +12,8 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
   const [mission, setMission] = useState<Mission>("webmarketer")
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const { ticketrzMissions, ticketrzPictures }: { ticketrzMissions: Array<{ text: string }>; ticketrzPictures: Array<{ path: string }> } = ticketrzMissionsData;
-  const { webmarketerMissions, webmarketerPictures, webmarketerLearns }: { webmarketerMissions: Array<{ text: string }>; webmarketerPictures: Array<{ path: string }>; webmarketerLearns: Array<{ text: string }> } = webmarketerMissionsData;
+  const { ticketrzMissions, ticketrzPictures }: { ticketrzMissions: Array<{ text: string }>; ticketrzPictures: Array<{ path: string; tooltipLabel: string; }> } = ticketrzMissionsData;
+  const { webmarketerMissions, webmarketerPictures, webmarketerLearns }: { webmarketerMissions: Array<{ text: string }>; webmarketerPictures: Array<{ path: string; tooltipLabel: string; }>; webmarketerLearns: Array<{ text: string }> } = webmarketerMissionsData;
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(containerRef.current, {
