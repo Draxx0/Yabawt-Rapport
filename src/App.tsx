@@ -20,7 +20,9 @@ const App = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from("*", { opacity: 0, duration: 1 });
+      gsap.from("*", {
+        opacity: 0, duration: 1
+      });
     }, appRef);
 
     return () => ctx.revert();
@@ -29,7 +31,7 @@ const App = () => {
   return (
     <div className="relative overflow-hidden" ref={appRef}>
       <Header />
-      <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="me.jpg" />
+      <ArticleHeader articleTitle="Dans la peau d’un développeur Fullstack JS" articleFrom="William FORT" articleFromUrl="https://www.linkedin.com/in/william-fort/" articleFromIcon="/assets/icons/code.png" />
 
       <FloaterIcon name="dots" className="absolute -right-24 -top-5" />
 

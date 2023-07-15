@@ -39,25 +39,24 @@
  ],
  "ticketrzPictures":[
   {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+    "path": "/assets/images/ticketrz/ticketrz2.jpg",
+    "tooltipLabel": "Système de filtre"
   },
   {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+    "path": "/assets/images/ticketrz/ticketrz3.jpg",
+    "tooltipLabel": "Espace discussion avec WYSIWYG"
   },
   {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+    "path": "/assets/images/ticketrz/ticketrz4.jpg",
+    "tooltipLabel": "Modal d'intégration de lien."
   },
   {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+    "path": "/assets/images/ticketrz/ticketrz5.jpg",
+    "tooltipLabel": "Liste non exhaustive des outils du WYSIWYG intégré"
   },
   {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
-  },
-  {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
-  },
-  {
-    "path": "/assets/images/ticketrz/ticketrz-image1.png"
+    "path": "/assets/images/ticketrz/ticketrz6.jpg",
+    "tooltipLabel": "Création d'un ticket avec prévisualisation d'image & pdf"
   }
  ]
 }
