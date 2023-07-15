@@ -58,7 +58,9 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
               <img src="/assets/images/webmarketer/Webmarketer-app.jpg" alt="" />
             </>
           </MissionRow>
-          <MissionRow imageUrl="/assets/images/webmarketer/micro-service.png" displayingText="left" subtitle="Micro-service" text="Webmarketer se présente sous la forme d’un micro service" />
+          <MissionRow imageUrl="/assets/images/webmarketer/micro-service.png" displayingText="left" subtitle="Micro-services" text="Webmarketer est dévelopé en sous formes de micro-services. Le développement en microservices est une approche de développement où une application est décomposée en plusieurs services indépendants et autonomes, appelés microservices. Chaque microservice est conçu pour accomplir une tâche spécifique de l'application et communique avec les autres microservices via des API bien définies. Les microservices sont généralement développés, déployés et mis à l'échelle de manière indépendante, ce qui permet une plus grande flexibilité et une évolutivité accrue de l'application dans son ensemble.">
+            <p>Cette approche facilite également la maintenance, la mise à jour et le déploiement continu des différents composants de l'application. En résumé, le développement en microservices favorise une architecture modulaire et distribuée, permettant de créer des applications flexibles, évolutives et résilientes.</p>
+          </MissionRow>
           <MissionTasks title="Webmarketer représente la moitié de mes missions sur la durée de mon stage, voici la liste des missions qui m’ont été assignées :">
             <div className="flex flex-col gap-3 mt-3">
 

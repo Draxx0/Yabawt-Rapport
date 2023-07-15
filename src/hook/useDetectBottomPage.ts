@@ -9,6 +9,7 @@ const useDetectBottomPage = () => {
         return;
       }
       setIsDisplay(false);
+      return;
     });
   };
   useEffect(() => {

@@ -36,7 +36,7 @@ const MissionRow = ({ subtitle, text, displayingText, imageUrl, children }: Prop
       </div>
 
       <div className={imageContainerClass}>
-        <img src={imageUrl} alt="" />
+        <img src={imageUrl} alt="" className="object-contain" />
       </div>
     </div>
   );
