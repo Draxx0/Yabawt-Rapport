@@ -29,7 +29,7 @@ const Review = ({ sectionName }: { sectionName: string; }) => {
           au contraire je me suis sentis comme vite intégrés, et dans un groupe de travail c’est très important, c’est ce qui entre autres m’a permis de vite
           prendre mes marques et de pouvoir me concentrer sur le travail demandé.</p>
         <p className="font-medium">
-          Je souhaite en dernier lieu remercier Yabawt pour son accueil bienveillant et évidemment remercier l’équipe technique avec laquel j’ai passé trois mois
+          Je souhaite en dernier lieu remercier Yabawt pour son accueil bienveillante et évidemment remercier l’équipe technique avec laquelle j’ai passé trois mois
           intensément formateur. Ce fût une expérience très enrichissante que je souhaite à tout futur développeur !</p>
         <p className="font-medium">
           Je repars plein de motivation et prêt à donner le meilleur de moi-même pour l’avenir.</p>
