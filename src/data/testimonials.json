@@ -4,14 +4,15 @@
    "name": "Simon Lejeune",
    "grade": "Développeur Fullstack",
    "special": "Tuteur",
-   "pp": "",
-   "notice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique lorem eu sem fringilla ornare. Etiam quis bibendum dui. Mauris dignissim nibh justo."
+   "pp": "/assets/images/simon.png",
+   "notice": "En tant que responsable de son stage, j'ai été satisfait des contributions de William. Il a été responsable de la réalisation de plusieurs fonctionnalités clés de nos applications, qui ont été livrées avec succès et dans les délais impartis."
   },
   {
    "name": "Clément Cloux",
    "grade": "Développeur Fullstack",
-   "pp": "",
-   "notice": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique lorem eu sem fringilla ornare. Etiam quis bibendum dui. Mauris dignissim nibh justo."
+   "special": "",
+   "pp": "/assets/images/clement.png",
+   "notice": "William a su prendre en main la stack technique et les process de l'équipe afin de mener a bien son stage. Il a fait preuve d'une bonne courbe de progression tout au long de son stage et j'ai apprécié sa motivation."
   }
  ]
 }
