@@ -55,7 +55,7 @@ const App = () => {
         </>
       </ArticleRow>
 
-      <FloaterIcon name="nest" className="absolute -left-16 top-[20%]" />
+      <FloaterIcon name="nest" className="absolute -left-16 top-[10%] lg:top-[20%]" />
 
       <ArticleRow sectionName="yabawt">
         <>
@@ -75,7 +75,7 @@ const App = () => {
         </>
       </ArticleRow >
 
-      <FloaterIcon name="react" className="absolute -right-24 top-[58%]" />
+      <FloaterIcon name="react" className="absolute -right-24 top-[45%] lg:top-[58%]" />
 
       <Missions sectionName="missions" />
 
