@@ -53,7 +53,7 @@ const Missions = ({ sectionName }: { sectionName: string; }) => {
                 <li className="bullet-li">L’analyse de ses campagnes marketing, permet l’analyse avec précision de la rentabilité des campagnes menées.</li>
                 <li className="bullet-li">Les modèles d’attributions, permettant d’utiliser ou de créer de nouveau modèles d’attributions permettant de répartir l’importance de l’action menée sur le site de l’utilisateur.</li>
                 <li className="bullet-li">L’analyse de la customer journey, permet de dresser une customer journey de tous les utilisateurs de son site.</li>
-                <li className="bullet-li">La Data visualisation, Permet de visualiser ces KPI dans des tableaux entièrement personnalisables.</li>
+                <li className="bullet-li">La Data visualisation, Permet de visualiser ses KPI dans des tableaux entièrement personnalisables.</li>
               </ul>
               <img src="/assets/images/webmarketer/Webmarketer-app.jpg" alt="" />
             </>
