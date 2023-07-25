@@ -41,7 +41,7 @@ const App = () => {
             <div className="flex flex-col gap-3">
               <p className="font-medium">Je suis FORT William, étudiant en deuxième années de développement web à l’ESD de Bordeaux. Passionnés par le web je cherchais à mettre en oeuvre les
                 compétences que j’ai pu acquérir lors de ma formation ainsi qu’au cours de mes heures de développement sur des projets personnels.</p>
-              <p className="font-medium">Et c’est auprès de l’entreprise Yabawt que j’ai pu mettre à l’épreuve ses compétences lors d’un stage afin de découvrir le  monde fantastique du développement web fullstack.</p>
+              <p className="font-medium">Et c’est auprès de l’entreprise Yabawt que j’ai pu mettre à l’épreuve ces compétences lors d’un stage afin de découvrir le  monde fantastique du développement web fullstack.</p>
             </div>
           </ArticleRow.Text>
           <ArticleRow.Image imageUrl="me.jpg">
